@@ -1,4 +1,3 @@
-// Coppy menu for mobile
 function Copymenu() {
   const dptCategory = document.querySelector(".dpt-cat");
   const dptPlace = document.querySelector(".departments");
@@ -14,7 +13,12 @@ function Copymenu() {
 }
 Copymenu();
 
-// show menu on mobile
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 const subMenu = document.querySelectorAll(".has-child .icon-small")
 subMenu.forEach((menu) => menu.addEventListener("click", toggle))
@@ -37,15 +41,6 @@ closeIcon.addEventListener("click", function () {
   addClass.classList.remove("showmenu");
 });
 
-// slider
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-
-//Show search
 const searchBtn = document.querySelector(".t-search");
 const tClose = document.querySelector(".search-close");
 const showClass = document.querySelector(".site");

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik&display=swap');
 
 :root{
     /* color */
@@ -45,11 +45,13 @@ body{
     line-height: 1.4;
     color: var(--dark-color);
     background-color: var(--white-color);
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
     /* Reset lại màu mặc định */
     color: initial;
+    color: inherit;
     -webkit-tap-highlight-color: transparent;
 }
 ul{
@@ -79,7 +81,9 @@ h4{
     font-size: 1em;
     font-weight: var(--fw6);
 }
-
+strong{
+    font-weight: var(--fw8);
+}
 /*Base  CSS */
 .container{
     max-width: 1300px;
@@ -133,9 +137,9 @@ h4{
 }
 .icon-small {
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
-.icon-large{
+.icon-lagre{
     font-size: 1.75em;
     padding: 0 0.75em 0 0;
 }
